@@ -8,13 +8,13 @@ main {
   padding: 40px;
 }
 
-.container {
-  margin: 20px;
-}
-
-.container {
-  display: inline-block;
+.containerProcess {
   text-align: center;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+  margin: 20px;
 }
 
 #supportProcess .container {
@@ -60,13 +60,6 @@ section {
 
 #bto {
   background-color: #9fb1bc;
-}
-
-.containerProcess {
-  padding: 5px 10px;
-  border-radius: 5px;
-  background-color: #ccc;
-  margin-bottom: 20px;
 }
 
 #cenOps .containerProcess {
@@ -138,3 +131,4 @@ section {
 
   content: "";
 }
+/*********** hide areas ***********/
