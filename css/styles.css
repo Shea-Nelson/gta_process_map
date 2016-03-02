@@ -3,19 +3,26 @@ body {
   font-family: "Helvetica", "Segoe UI", "Arial", sans-serif !important;
 }
 
+a {
+  display:block;
+  text-decoration: none;
+}
+
 /*********** Containers ***********/
 main {
-  padding: 40px;
+  padding: 20px;
 }
 
 .containerProcess {
   text-align: center;
+  vertical-align: top;
   display: inline-block;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #ccc;
   margin: 20px;
 }
+
 
 #supportProcess .container {
   display: block;
@@ -27,19 +34,16 @@ main {
 
 .orgEntity {
   text-align: center;
-}
-
-
-.orgEntity {
   display: inline-block;
   border-radius: 5px;
-  margin: 10px 50px;
+  margin: 10px 10px;
 }
 
 section {
+  text-align: center;
   margin-bottom: 15px;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
 }
 
 #businessProcess {
@@ -113,9 +117,25 @@ section {
   background-color: rgba(0, 0, 0, .2);
 }
 
-.process .cardTitle {
+.process .cardTitle,
+.process .cardTitle > a {
   background-color: rgba(255, 255, 255, .2);
   color: #000;
+}
+
+.card .cardTitle:hover,
+.orgEntityTitle:hover {
+  background-color: white;
+  color: black;
+  border: solid black 1px;
+}
+
+.card .cardTitle:hover {
+  padding: 4px;
+}
+
+.orgEntityTitle:hover {
+  padding: 9px;
 }
 
 .subprocess .cardTitle {
