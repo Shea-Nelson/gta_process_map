@@ -1,0 +1,58 @@
+<style>
+main {
+    transform: scale(1.1,1.1);
+}
+
+.orgEntity {
+  padding: 5px;
+}
+
+.businessProcess {
+  padding: 0px;
+}
+
+.containerProcess {
+  border: solid rgba(100,100,100,.5) 2px;
+  margin: 5px;
+}
+
+.process .cardTitle a {
+padding: 5px;
+background-color: rgba(233,250,169,.45);
+}
+
+/*********** hide areas ***********/
+.hero .sectionTitle {
+  display:none;
+}
+
+#supportProcess {
+  display: none;
+}
+
+#containerRRP {
+  display: none;
+}
+
+#containerRD {
+  display: none;
+}
+
+#containerRM {
+  display:none;
+}
+
+#containerCD {
+  display: none;
+}
+
+#containerTA {
+  display:none;
+}
+
+/*********** clears parent margin ***********/
+.hero section {
+  margin-bottom: 0px
+}
+
+</style>

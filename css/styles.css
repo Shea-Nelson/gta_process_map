@@ -1,16 +1,60 @@
-/*********** Global ***********/
-body {
-  font-family: "Helvetica", "Segoe UI", "Arial", sans-serif !important;
+/*********** Fonts ***********/
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Thin.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(/sites/gta/Style%20Library/fonts/roboto/Roboto-Black.ttf) format('truetype');
 }
 
-a {
+/*********** Global ***********/
+main {
+  font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", sans-serif !important;
+}
+
+main a,
+main a:hover,
+main a:visited,
+main .ms-link,
+main .ms-link:visited {
+  font-family: "Roboto Bold", "Helvetica", "Segoe UI", "Arial", sans-serif !important;
+  color: #555;
   display:block;
   text-decoration: none;
 }
 
 /*********** Containers ***********/
 main {
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .containerProcess {
@@ -41,6 +85,7 @@ main {
 
 section {
   text-align: center;
+  display: inline-block;
   margin-bottom: 15px;
   border-radius: 5px;
   padding: 10px;
@@ -110,7 +155,8 @@ section {
   border-radius: 5px;
 }
 
-.orgEntityTitle {
+.orgEntityTitle,
+.orgEntityTitle>a {
   border-radius: 5px;
   color: #fff;
   padding: 10px;
@@ -118,15 +164,18 @@ section {
 }
 
 .process .cardTitle,
-.process .cardTitle > a {
-  background-color: rgba(255, 255, 255, .2);
-  color: #000;
+.subprocess .cardTitle,
+.orgEntity .orgEntityTitle {
+ display:block;
+ text-decoration: none;
+ background-color: rgba(255, 255, 255, .2);
+ color: #000 !important;
 }
 
 .card .cardTitle:hover,
 .orgEntityTitle:hover {
   background-color: white;
-  color: black;
+  color: black !important;
   border: solid black 1px;
 }
 
@@ -152,3 +201,32 @@ section {
   content: "";
 }
 /*********** hide areas ***********/
+/*
+.sectionTitle {
+  display:none;
+}
+
+#supportProcess {
+  display: none;
+}
+
+#containerRRP {
+  display: none;
+}
+
+#containerRD {
+  display: none;
+}
+
+#containerRM {
+  display:none;
+}
+
+#containerCD {
+  display: none;
+}
+
+#containerTA {
+  display:none;
+}
+*/
