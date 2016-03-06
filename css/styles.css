@@ -64,6 +64,7 @@ main {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #ccc;
+  min-width: 245px;
   margin: 20px;
 }
 
@@ -141,7 +142,9 @@ section {
   margin-bottom: 5px;
 }
 
-.sectionTitle {
+.sectionTitle,
+.sectionTitle a:hover,
+.sectionTitle .ms-link:visited {
   text-align: left;
   padding: 10px 20px;
   border-radius: 5px;
@@ -156,7 +159,9 @@ section {
 }
 
 .orgEntityTitle,
-.orgEntityTitle>a {
+.orgEntityTitle a,
+.orgEntityTitle a:visited,
+.orgEntityTitle .ms-link:visited {
   border-radius: 5px;
   color: #fff;
   padding: 10px;
