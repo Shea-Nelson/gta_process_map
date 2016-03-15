@@ -37,7 +37,7 @@
 }
 
 /*********** Global ***********/
-main {
+#containerMain {
   font-family: "Roboto", "Helvetica", "Segoe UI", "Arial", sans-serif !important;
 }
 
@@ -53,7 +53,7 @@ main .ms-link:visited {
 }
 
 /*********** Containers ***********/
-main {
+#containerMain {
   padding: 0px 20px;
 }
 
